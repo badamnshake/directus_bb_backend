@@ -12,7 +12,12 @@ services:
       SECRET: 'replace-with-random-value'
       ADMIN_EMAIL: 'admin@example.com'
       ADMIN_PASSWORD: 'd1r3ctu5'
+      # DB_CLIENT: "pg"
+      # DB_CONNECTION_STRING: "postgres://pabjjdhi:LGeeOKEl2uMkf1XDrvVLcd8LsQlEbCf6@rosie.db.elephantsql.com/pabjjdhi"
+      # NODE_TLS_REJECT_UNAUTHORIZED: "0"
+      # DB_SSL__REJECT_UNAUTHORIZED: "false"
       DB_CLIENT: 'sqlite3'
       DB_FILENAME: '/directus/database/data.db'
+      ACCESS_TOKEN_TTL: '1440m'
       CORS_ENABLED: true
       WEBSOCKETS_ENABLED: true
